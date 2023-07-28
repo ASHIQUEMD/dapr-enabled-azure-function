@@ -19,7 +19,7 @@ namespace dotnet_azurefunction
         [FunctionName("RetrieveSecretLocal")]
         public static void Run(
             [DaprServiceInvocationTrigger] object args,
-            [DaprSecret("localsecretstore", "mysecret", Metadata = "metadata.namespace=default")] IDictionary<string, string> secret,
+            [DaprSecret("localsecretstore", "my-secret", Metadata = "metadata.namespace=default")] IDictionary<string, string> secret,
             ILogger log)
         {
             log.LogInformation("C# function processed a RetrieveSecret request from the Dapr Runtime.");
