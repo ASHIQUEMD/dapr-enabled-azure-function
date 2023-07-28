@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "dapr_enabled_azure_function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7078",
+      "launchBrowser": false
+    }
+  }
+}
